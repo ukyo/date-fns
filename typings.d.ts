@@ -446,6 +446,9 @@ declare module 'date-fns' {
   function subYears(date: DateOrStringOrNumber, amount: number): Date;
   namespace subYears {}
 
+  function toDate(argument: any, options?: {additionalDigits?: number}): Date;
+  namespace toDate {}
+
 }
 
 declare module 'date-fns/add_days' {
@@ -1188,3 +1191,7 @@ declare module 'date-fns/sub_years' {
   export = subYears;
 }
 
+declare module 'date-fns/to_date' {
+  import {toDate} from 'date-fns';
+  export = toDate;
+}
