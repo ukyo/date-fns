@@ -338,7 +338,7 @@ declare module 'date-fns' {
   function min(...dates: DateOrStringOrNumber[]): Date;
   namespace min {}
 
-  function parse(dateString: string): Date;
+  function parse(dateString: string, formatString?: string): Date;
   namespace parse {}
 
   function setDate(date: DateOrStringOrNumber, dayOfMonth: number): Date;
