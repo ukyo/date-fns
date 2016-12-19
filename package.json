@@ -61,6 +61,7 @@
     "build-docs": "babel-node ./scripts/generate_docs",
     "lint": "standard --verbose | snazzy",
     "generate-index": "babel-node ./scripts/generate_index",
+    "generate-typings": "babel-node ./scripts/generate_typings",
     "sync-versions": "babel-node ./scripts/sync_versions",
     "release": "./scripts/release.sh",
     "build-umd": "./scripts/build_umd.sh",
