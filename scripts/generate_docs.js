@@ -30,6 +30,9 @@ function generateDocsFromSource () {
           category: doc.category,
           title: doc.name,
           description: doc.summary,
+          params: buildParamTree(doc.params),
+          returns: doc.returns,
+          file: doc.file,
           content: doc
         })
       )
@@ -88,7 +91,10 @@ function generateDocFromSource (acc, fn) {
 
     stream.on('data', (chunk) => { data += chunk })
     stream.on('end', () => resolve(JSON.parse(data)))
-  }).then((doc) => acc.concat(doc))
+  }).then((doc) => {
+    doc[0].file = fn
+    return acc.concat(doc)
+  })
 }
 
 /**
@@ -122,4 +128,41 @@ function getListOfStaticDocs (staticDocs) {
       .then((docContent) => docContent.toString())
       .then((content) => Object.assign({content}, staticDoc))
   }))
+}
+
+/**
+ * Turn a list of parameter docs into a tree, e.g.
+ * [{name: 'options'}, {name: 'options.locale'}] => [{name: 'options', props: [{name: 'locale'}]}]
+ */
+function buildParamTree (params) {
+  if (!params) {
+    return null
+  }
+
+  const paramIndices = params.reduce((result, param, index) => {
+    result[param.name] = index
+    return result
+  }, {})
+
+  return params
+    .map((param, index) => {
+      const {name, isProperty} = param
+      const indexOfDot = name.indexOf('.')
+
+      if (indexOfDot >= 0 && !isProperty) {
+        const parentIndex = paramIndices[name.substring(0, indexOfDot)]
+        const parent = params[parentIndex]
+
+        param.name = name.substring(indexOfDot + 1)
+        param.isProperty = true
+        if (!parent.props) {
+          parent.props = [param]
+        } else {
+          parent.props.push(param)
+        }
+      }
+
+      return param
+    })
+    .filter((param) => !param.isProperty)
 }
