@@ -151,5 +151,30 @@ module.exports = {
   subQuarters: require('./sub_quarters/index.js'),
   subSeconds: require('./sub_seconds/index.js'),
   subWeeks: require('./sub_weeks/index.js'),
-  subYears: require('./sub_years/index.js')
+  subYears: require('./sub_years/index.js'),
+  locale: {
+    ca: require('./locale/ca/index.js'),
+    da: require('./locale/da/index.js'),
+    de: require('./locale/de/index.js'),
+    el: require('./locale/el/index.js'),
+    en: require('./locale/en/index.js'),
+    eo: require('./locale/eo/index.js'),
+    es: require('./locale/es/index.js'),
+    fil: require('./locale/fil/index.js'),
+    fr: require('./locale/fr/index.js'),
+    id: require('./locale/id/index.js'),
+    it: require('./locale/it/index.js'),
+    ja: require('./locale/ja/index.js'),
+    ko: require('./locale/ko/index.js'),
+    nb: require('./locale/nb/index.js'),
+    nl: require('./locale/nl/index.js'),
+    pl: require('./locale/pl/index.js'),
+    pt: require('./locale/pt/index.js'),
+    ru: require('./locale/ru/index.js'),
+    sk: require('./locale/sk/index.js'),
+    sv: require('./locale/sv/index.js'),
+    tr: require('./locale/tr/index.js'),
+    zhCN: require('./locale/zh_cn/index.js'),
+    zhTW: require('./locale/zh_tw/index.js')
+  }
 }
