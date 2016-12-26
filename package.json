@@ -1,6 +1,6 @@
 {
   "name": "@ukyo/date-fns",
-  "version": "1.21.1",
+  "version": "1.21.3",
   "author": "Sasha Koss <koss@nocorp.me>",
   "license": "MIT",
   "description": "Modern JavaScript date utility library",
