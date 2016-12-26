@@ -1333,7 +1333,3 @@ declare module '@ukyo/date-fns/locale/zh_tw' {
   import {zh_tw} from '@ukyo/date-fns/locale';
   export = zh_tw;
 }
-
-declare module '@ukyo/date-fns' {
-  export * from '@ukyo/date-fns';
-}
