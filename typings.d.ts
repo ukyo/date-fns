@@ -3,7 +3,6 @@ type Formatters = {[key: string]: (date: Date) => string};
 
 declare module 'date-fns' {
 
-  import ObjectIterator = _.ObjectIterator;
   function addDays(date: DateOrStringOrNumber, amount: number): Date;
   namespace addDays {}
 
