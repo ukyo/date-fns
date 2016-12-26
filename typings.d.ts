@@ -1,7 +1,7 @@
 type DateOrStringOrNumber = Date | string | number;
 type Formatters = {[key: string]: (date: Date) => string};
 
-declare module 'date-fns' {
+declare module '@ukyo/date-fns' {
 
   function addDays(date: DateOrStringOrNumber, amount: number): Date;
   namespace addDays {}
@@ -474,862 +474,866 @@ declare module 'date-fns' {
   }
 }
 
-declare module 'date-fns/add_days' {
-  import {addDays} from 'date-fns';
+declare module '@ukyo/date-fns/add_days' {
+  import {addDays} from '@ukyo/date-fns';
   export = addDays;
 }
 
-declare module 'date-fns/add_hours' {
-  import {addHours} from 'date-fns';
+declare module '@ukyo/date-fns/add_hours' {
+  import {addHours} from '@ukyo/date-fns';
   export = addHours;
 }
 
-declare module 'date-fns/add_iso_years' {
-  import {addISOYears} from 'date-fns';
+declare module '@ukyo/date-fns/add_iso_years' {
+  import {addISOYears} from '@ukyo/date-fns';
   export = addISOYears;
 }
 
-declare module 'date-fns/add_milliseconds' {
-  import {addMilliseconds} from 'date-fns';
+declare module '@ukyo/date-fns/add_milliseconds' {
+  import {addMilliseconds} from '@ukyo/date-fns';
   export = addMilliseconds;
 }
 
-declare module 'date-fns/add_minutes' {
-  import {addMinutes} from 'date-fns';
+declare module '@ukyo/date-fns/add_minutes' {
+  import {addMinutes} from '@ukyo/date-fns';
   export = addMinutes;
 }
 
-declare module 'date-fns/add_months' {
-  import {addMonths} from 'date-fns';
+declare module '@ukyo/date-fns/add_months' {
+  import {addMonths} from '@ukyo/date-fns';
   export = addMonths;
 }
 
-declare module 'date-fns/add_quarters' {
-  import {addQuarters} from 'date-fns';
+declare module '@ukyo/date-fns/add_quarters' {
+  import {addQuarters} from '@ukyo/date-fns';
   export = addQuarters;
 }
 
-declare module 'date-fns/add_seconds' {
-  import {addSeconds} from 'date-fns';
+declare module '@ukyo/date-fns/add_seconds' {
+  import {addSeconds} from '@ukyo/date-fns';
   export = addSeconds;
 }
 
-declare module 'date-fns/add_weeks' {
-  import {addWeeks} from 'date-fns';
+declare module '@ukyo/date-fns/add_weeks' {
+  import {addWeeks} from '@ukyo/date-fns';
   export = addWeeks;
 }
 
-declare module 'date-fns/add_years' {
-  import {addYears} from 'date-fns';
+declare module '@ukyo/date-fns/add_years' {
+  import {addYears} from '@ukyo/date-fns';
   export = addYears;
 }
 
-declare module 'date-fns/closest_index_to' {
-  import {closestIndexTo} from 'date-fns';
+declare module '@ukyo/date-fns/closest_index_to' {
+  import {closestIndexTo} from '@ukyo/date-fns';
   export = closestIndexTo;
 }
 
-declare module 'date-fns/closest_to' {
-  import {closestTo} from 'date-fns';
+declare module '@ukyo/date-fns/closest_to' {
+  import {closestTo} from '@ukyo/date-fns';
   export = closestTo;
 }
 
-declare module 'date-fns/compare_asc' {
-  import {compareAsc} from 'date-fns';
+declare module '@ukyo/date-fns/compare_asc' {
+  import {compareAsc} from '@ukyo/date-fns';
   export = compareAsc;
 }
 
-declare module 'date-fns/compare_desc' {
-  import {compareDesc} from 'date-fns';
+declare module '@ukyo/date-fns/compare_desc' {
+  import {compareDesc} from '@ukyo/date-fns';
   export = compareDesc;
 }
 
-declare module 'date-fns/difference_in_calendar_days' {
-  import {differenceInCalendarDays} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_calendar_days' {
+  import {differenceInCalendarDays} from '@ukyo/date-fns';
   export = differenceInCalendarDays;
 }
 
-declare module 'date-fns/difference_in_calendar_iso_weeks' {
-  import {differenceInCalendarISOWeeks} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_calendar_iso_weeks' {
+  import {differenceInCalendarISOWeeks} from '@ukyo/date-fns';
   export = differenceInCalendarISOWeeks;
 }
 
-declare module 'date-fns/difference_in_calendar_iso_years' {
-  import {differenceInCalendarISOYears} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_calendar_iso_years' {
+  import {differenceInCalendarISOYears} from '@ukyo/date-fns';
   export = differenceInCalendarISOYears;
 }
 
-declare module 'date-fns/difference_in_calendar_months' {
-  import {differenceInCalendarMonths} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_calendar_months' {
+  import {differenceInCalendarMonths} from '@ukyo/date-fns';
   export = differenceInCalendarMonths;
 }
 
-declare module 'date-fns/difference_in_calendar_quarters' {
-  import {differenceInCalendarQuarters} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_calendar_quarters' {
+  import {differenceInCalendarQuarters} from '@ukyo/date-fns';
   export = differenceInCalendarQuarters;
 }
 
-declare module 'date-fns/difference_in_calendar_weeks' {
-  import {differenceInCalendarWeeks} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_calendar_weeks' {
+  import {differenceInCalendarWeeks} from '@ukyo/date-fns';
   export = differenceInCalendarWeeks;
 }
 
-declare module 'date-fns/difference_in_calendar_years' {
-  import {differenceInCalendarYears} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_calendar_years' {
+  import {differenceInCalendarYears} from '@ukyo/date-fns';
   export = differenceInCalendarYears;
 }
 
-declare module 'date-fns/difference_in_days' {
-  import {differenceInDays} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_days' {
+  import {differenceInDays} from '@ukyo/date-fns';
   export = differenceInDays;
 }
 
-declare module 'date-fns/difference_in_hours' {
-  import {differenceInHours} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_hours' {
+  import {differenceInHours} from '@ukyo/date-fns';
   export = differenceInHours;
 }
 
-declare module 'date-fns/difference_in_iso_years' {
-  import {differenceInISOYears} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_iso_years' {
+  import {differenceInISOYears} from '@ukyo/date-fns';
   export = differenceInISOYears;
 }
 
-declare module 'date-fns/difference_in_milliseconds' {
-  import {differenceInMilliseconds} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_milliseconds' {
+  import {differenceInMilliseconds} from '@ukyo/date-fns';
   export = differenceInMilliseconds;
 }
 
-declare module 'date-fns/difference_in_minutes' {
-  import {differenceInMinutes} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_minutes' {
+  import {differenceInMinutes} from '@ukyo/date-fns';
   export = differenceInMinutes;
 }
 
-declare module 'date-fns/difference_in_months' {
-  import {differenceInMonths} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_months' {
+  import {differenceInMonths} from '@ukyo/date-fns';
   export = differenceInMonths;
 }
 
-declare module 'date-fns/difference_in_quarters' {
-  import {differenceInQuarters} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_quarters' {
+  import {differenceInQuarters} from '@ukyo/date-fns';
   export = differenceInQuarters;
 }
 
-declare module 'date-fns/difference_in_seconds' {
-  import {differenceInSeconds} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_seconds' {
+  import {differenceInSeconds} from '@ukyo/date-fns';
   export = differenceInSeconds;
 }
 
-declare module 'date-fns/difference_in_weeks' {
-  import {differenceInWeeks} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_weeks' {
+  import {differenceInWeeks} from '@ukyo/date-fns';
   export = differenceInWeeks;
 }
 
-declare module 'date-fns/difference_in_years' {
-  import {differenceInYears} from 'date-fns';
+declare module '@ukyo/date-fns/difference_in_years' {
+  import {differenceInYears} from '@ukyo/date-fns';
   export = differenceInYears;
 }
 
-declare module 'date-fns/distance_in_words' {
-  import {distanceInWords} from 'date-fns';
+declare module '@ukyo/date-fns/distance_in_words' {
+  import {distanceInWords} from '@ukyo/date-fns';
   export = distanceInWords;
 }
 
-declare module 'date-fns/distance_in_words_to_now' {
-  import {distanceInWordsToNow} from 'date-fns';
+declare module '@ukyo/date-fns/distance_in_words_to_now' {
+  import {distanceInWordsToNow} from '@ukyo/date-fns';
   export = distanceInWordsToNow;
 }
 
-declare module 'date-fns/each_day' {
-  import {eachDay} from 'date-fns';
+declare module '@ukyo/date-fns/each_day' {
+  import {eachDay} from '@ukyo/date-fns';
   export = eachDay;
 }
 
-declare module 'date-fns/end_of_day' {
-  import {endOfDay} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_day' {
+  import {endOfDay} from '@ukyo/date-fns';
   export = endOfDay;
 }
 
-declare module 'date-fns/end_of_hour' {
-  import {endOfHour} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_hour' {
+  import {endOfHour} from '@ukyo/date-fns';
   export = endOfHour;
 }
 
-declare module 'date-fns/end_of_iso_week' {
-  import {endOfISOWeek} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_iso_week' {
+  import {endOfISOWeek} from '@ukyo/date-fns';
   export = endOfISOWeek;
 }
 
-declare module 'date-fns/end_of_iso_year' {
-  import {endOfISOYear} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_iso_year' {
+  import {endOfISOYear} from '@ukyo/date-fns';
   export = endOfISOYear;
 }
 
-declare module 'date-fns/end_of_minute' {
-  import {endOfMinute} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_minute' {
+  import {endOfMinute} from '@ukyo/date-fns';
   export = endOfMinute;
 }
 
-declare module 'date-fns/end_of_month' {
-  import {endOfMonth} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_month' {
+  import {endOfMonth} from '@ukyo/date-fns';
   export = endOfMonth;
 }
 
-declare module 'date-fns/end_of_quarter' {
-  import {endOfQuarter} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_quarter' {
+  import {endOfQuarter} from '@ukyo/date-fns';
   export = endOfQuarter;
 }
 
-declare module 'date-fns/end_of_second' {
-  import {endOfSecond} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_second' {
+  import {endOfSecond} from '@ukyo/date-fns';
   export = endOfSecond;
 }
 
-declare module 'date-fns/end_of_today' {
-  import {endOfToday} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_today' {
+  import {endOfToday} from '@ukyo/date-fns';
   export = endOfToday;
 }
 
-declare module 'date-fns/end_of_tomorrow' {
-  import {endOfTomorrow} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_tomorrow' {
+  import {endOfTomorrow} from '@ukyo/date-fns';
   export = endOfTomorrow;
 }
 
-declare module 'date-fns/end_of_week' {
-  import {endOfWeek} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_week' {
+  import {endOfWeek} from '@ukyo/date-fns';
   export = endOfWeek;
 }
 
-declare module 'date-fns/end_of_year' {
-  import {endOfYear} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_year' {
+  import {endOfYear} from '@ukyo/date-fns';
   export = endOfYear;
 }
 
-declare module 'date-fns/end_of_yesterday' {
-  import {endOfYesterday} from 'date-fns';
+declare module '@ukyo/date-fns/end_of_yesterday' {
+  import {endOfYesterday} from '@ukyo/date-fns';
   export = endOfYesterday;
 }
 
-declare module 'date-fns/format' {
-  import {format} from 'date-fns';
+declare module '@ukyo/date-fns/format' {
+  import {format} from '@ukyo/date-fns';
   export = format;
 }
 
-declare module 'date-fns/get_date' {
-  import {getDate} from 'date-fns';
+declare module '@ukyo/date-fns/get_date' {
+  import {getDate} from '@ukyo/date-fns';
   export = getDate;
 }
 
-declare module 'date-fns/get_day' {
-  import {getDay} from 'date-fns';
+declare module '@ukyo/date-fns/get_day' {
+  import {getDay} from '@ukyo/date-fns';
   export = getDay;
 }
 
-declare module 'date-fns/get_day_of_year' {
-  import {getDayOfYear} from 'date-fns';
+declare module '@ukyo/date-fns/get_day_of_year' {
+  import {getDayOfYear} from '@ukyo/date-fns';
   export = getDayOfYear;
 }
 
-declare module 'date-fns/get_days_in_month' {
-  import {getDaysInMonth} from 'date-fns';
+declare module '@ukyo/date-fns/get_days_in_month' {
+  import {getDaysInMonth} from '@ukyo/date-fns';
   export = getDaysInMonth;
 }
 
-declare module 'date-fns/get_days_in_year' {
-  import {getDaysInYear} from 'date-fns';
+declare module '@ukyo/date-fns/get_days_in_year' {
+  import {getDaysInYear} from '@ukyo/date-fns';
   export = getDaysInYear;
 }
 
-declare module 'date-fns/get_hours' {
-  import {getHours} from 'date-fns';
+declare module '@ukyo/date-fns/get_hours' {
+  import {getHours} from '@ukyo/date-fns';
   export = getHours;
 }
 
-declare module 'date-fns/get_iso_week' {
-  import {getISOWeek} from 'date-fns';
+declare module '@ukyo/date-fns/get_iso_week' {
+  import {getISOWeek} from '@ukyo/date-fns';
   export = getISOWeek;
 }
 
-declare module 'date-fns/get_iso_weeks_in_year' {
-  import {getISOWeeksInYear} from 'date-fns';
+declare module '@ukyo/date-fns/get_iso_weeks_in_year' {
+  import {getISOWeeksInYear} from '@ukyo/date-fns';
   export = getISOWeeksInYear;
 }
 
-declare module 'date-fns/get_iso_year' {
-  import {getISOYear} from 'date-fns';
+declare module '@ukyo/date-fns/get_iso_year' {
+  import {getISOYear} from '@ukyo/date-fns';
   export = getISOYear;
 }
 
-declare module 'date-fns/get_milliseconds' {
-  import {getMilliseconds} from 'date-fns';
+declare module '@ukyo/date-fns/get_milliseconds' {
+  import {getMilliseconds} from '@ukyo/date-fns';
   export = getMilliseconds;
 }
 
-declare module 'date-fns/get_minutes' {
-  import {getMinutes} from 'date-fns';
+declare module '@ukyo/date-fns/get_minutes' {
+  import {getMinutes} from '@ukyo/date-fns';
   export = getMinutes;
 }
 
-declare module 'date-fns/get_month' {
-  import {getMonth} from 'date-fns';
+declare module '@ukyo/date-fns/get_month' {
+  import {getMonth} from '@ukyo/date-fns';
   export = getMonth;
 }
 
-declare module 'date-fns/get_quarter' {
-  import {getQuarter} from 'date-fns';
+declare module '@ukyo/date-fns/get_quarter' {
+  import {getQuarter} from '@ukyo/date-fns';
   export = getQuarter;
 }
 
-declare module 'date-fns/get_seconds' {
-  import {getSeconds} from 'date-fns';
+declare module '@ukyo/date-fns/get_seconds' {
+  import {getSeconds} from '@ukyo/date-fns';
   export = getSeconds;
 }
 
-declare module 'date-fns/get_year' {
-  import {getYear} from 'date-fns';
+declare module '@ukyo/date-fns/get_year' {
+  import {getYear} from '@ukyo/date-fns';
   export = getYear;
 }
 
-declare module 'date-fns/is_after' {
-  import {isAfter} from 'date-fns';
+declare module '@ukyo/date-fns/is_after' {
+  import {isAfter} from '@ukyo/date-fns';
   export = isAfter;
 }
 
-declare module 'date-fns/is_before' {
-  import {isBefore} from 'date-fns';
+declare module '@ukyo/date-fns/is_before' {
+  import {isBefore} from '@ukyo/date-fns';
   export = isBefore;
 }
 
-declare module 'date-fns/is_date' {
-  import {isDate} from 'date-fns';
+declare module '@ukyo/date-fns/is_date' {
+  import {isDate} from '@ukyo/date-fns';
   export = isDate;
 }
 
-declare module 'date-fns/is_equal' {
-  import {isEqual} from 'date-fns';
+declare module '@ukyo/date-fns/is_equal' {
+  import {isEqual} from '@ukyo/date-fns';
   export = isEqual;
 }
 
-declare module 'date-fns/is_first_day_of_month' {
-  import {isFirstDayOfMonth} from 'date-fns';
+declare module '@ukyo/date-fns/is_first_day_of_month' {
+  import {isFirstDayOfMonth} from '@ukyo/date-fns';
   export = isFirstDayOfMonth;
 }
 
-declare module 'date-fns/is_friday' {
-  import {isFriday} from 'date-fns';
+declare module '@ukyo/date-fns/is_friday' {
+  import {isFriday} from '@ukyo/date-fns';
   export = isFriday;
 }
 
-declare module 'date-fns/is_future' {
-  import {isFuture} from 'date-fns';
+declare module '@ukyo/date-fns/is_future' {
+  import {isFuture} from '@ukyo/date-fns';
   export = isFuture;
 }
 
-declare module 'date-fns/is_last_day_of_month' {
-  import {isLastDayOfMonth} from 'date-fns';
+declare module '@ukyo/date-fns/is_last_day_of_month' {
+  import {isLastDayOfMonth} from '@ukyo/date-fns';
   export = isLastDayOfMonth;
 }
 
-declare module 'date-fns/is_leap_year' {
-  import {isLeapYear} from 'date-fns';
+declare module '@ukyo/date-fns/is_leap_year' {
+  import {isLeapYear} from '@ukyo/date-fns';
   export = isLeapYear;
 }
 
-declare module 'date-fns/is_monday' {
-  import {isMonday} from 'date-fns';
+declare module '@ukyo/date-fns/is_monday' {
+  import {isMonday} from '@ukyo/date-fns';
   export = isMonday;
 }
 
-declare module 'date-fns/is_past' {
-  import {isPast} from 'date-fns';
+declare module '@ukyo/date-fns/is_past' {
+  import {isPast} from '@ukyo/date-fns';
   export = isPast;
 }
 
-declare module 'date-fns/is_same_day' {
-  import {isSameDay} from 'date-fns';
+declare module '@ukyo/date-fns/is_same_day' {
+  import {isSameDay} from '@ukyo/date-fns';
   export = isSameDay;
 }
 
-declare module 'date-fns/is_same_hour' {
-  import {isSameHour} from 'date-fns';
+declare module '@ukyo/date-fns/is_same_hour' {
+  import {isSameHour} from '@ukyo/date-fns';
   export = isSameHour;
 }
 
-declare module 'date-fns/is_same_iso_week' {
-  import {isSameISOWeek} from 'date-fns';
+declare module '@ukyo/date-fns/is_same_iso_week' {
+  import {isSameISOWeek} from '@ukyo/date-fns';
   export = isSameISOWeek;
 }
 
-declare module 'date-fns/is_same_iso_year' {
-  import {isSameISOYear} from 'date-fns';
+declare module '@ukyo/date-fns/is_same_iso_year' {
+  import {isSameISOYear} from '@ukyo/date-fns';
   export = isSameISOYear;
 }
 
-declare module 'date-fns/is_same_minute' {
-  import {isSameMinute} from 'date-fns';
+declare module '@ukyo/date-fns/is_same_minute' {
+  import {isSameMinute} from '@ukyo/date-fns';
   export = isSameMinute;
 }
 
-declare module 'date-fns/is_same_month' {
-  import {isSameMonth} from 'date-fns';
+declare module '@ukyo/date-fns/is_same_month' {
+  import {isSameMonth} from '@ukyo/date-fns';
   export = isSameMonth;
 }
 
-declare module 'date-fns/is_same_quarter' {
-  import {isSameQuarter} from 'date-fns';
+declare module '@ukyo/date-fns/is_same_quarter' {
+  import {isSameQuarter} from '@ukyo/date-fns';
   export = isSameQuarter;
 }
 
-declare module 'date-fns/is_same_second' {
-  import {isSameSecond} from 'date-fns';
+declare module '@ukyo/date-fns/is_same_second' {
+  import {isSameSecond} from '@ukyo/date-fns';
   export = isSameSecond;
 }
 
-declare module 'date-fns/is_same_week' {
-  import {isSameWeek} from 'date-fns';
+declare module '@ukyo/date-fns/is_same_week' {
+  import {isSameWeek} from '@ukyo/date-fns';
   export = isSameWeek;
 }
 
-declare module 'date-fns/is_same_year' {
-  import {isSameYear} from 'date-fns';
+declare module '@ukyo/date-fns/is_same_year' {
+  import {isSameYear} from '@ukyo/date-fns';
   export = isSameYear;
 }
 
-declare module 'date-fns/is_saturday' {
-  import {isSaturday} from 'date-fns';
+declare module '@ukyo/date-fns/is_saturday' {
+  import {isSaturday} from '@ukyo/date-fns';
   export = isSaturday;
 }
 
-declare module 'date-fns/is_sunday' {
-  import {isSunday} from 'date-fns';
+declare module '@ukyo/date-fns/is_sunday' {
+  import {isSunday} from '@ukyo/date-fns';
   export = isSunday;
 }
 
-declare module 'date-fns/is_this_hour' {
-  import {isThisHour} from 'date-fns';
+declare module '@ukyo/date-fns/is_this_hour' {
+  import {isThisHour} from '@ukyo/date-fns';
   export = isThisHour;
 }
 
-declare module 'date-fns/is_this_iso_week' {
-  import {isThisISOWeek} from 'date-fns';
+declare module '@ukyo/date-fns/is_this_iso_week' {
+  import {isThisISOWeek} from '@ukyo/date-fns';
   export = isThisISOWeek;
 }
 
-declare module 'date-fns/is_this_iso_year' {
-  import {isThisISOYear} from 'date-fns';
+declare module '@ukyo/date-fns/is_this_iso_year' {
+  import {isThisISOYear} from '@ukyo/date-fns';
   export = isThisISOYear;
 }
 
-declare module 'date-fns/is_this_minute' {
-  import {isThisMinute} from 'date-fns';
+declare module '@ukyo/date-fns/is_this_minute' {
+  import {isThisMinute} from '@ukyo/date-fns';
   export = isThisMinute;
 }
 
-declare module 'date-fns/is_this_month' {
-  import {isThisMonth} from 'date-fns';
+declare module '@ukyo/date-fns/is_this_month' {
+  import {isThisMonth} from '@ukyo/date-fns';
   export = isThisMonth;
 }
 
-declare module 'date-fns/is_this_quarter' {
-  import {isThisQuarter} from 'date-fns';
+declare module '@ukyo/date-fns/is_this_quarter' {
+  import {isThisQuarter} from '@ukyo/date-fns';
   export = isThisQuarter;
 }
 
-declare module 'date-fns/is_this_second' {
-  import {isThisSecond} from 'date-fns';
+declare module '@ukyo/date-fns/is_this_second' {
+  import {isThisSecond} from '@ukyo/date-fns';
   export = isThisSecond;
 }
 
-declare module 'date-fns/is_this_week' {
-  import {isThisWeek} from 'date-fns';
+declare module '@ukyo/date-fns/is_this_week' {
+  import {isThisWeek} from '@ukyo/date-fns';
   export = isThisWeek;
 }
 
-declare module 'date-fns/is_this_year' {
-  import {isThisYear} from 'date-fns';
+declare module '@ukyo/date-fns/is_this_year' {
+  import {isThisYear} from '@ukyo/date-fns';
   export = isThisYear;
 }
 
-declare module 'date-fns/is_thursday' {
-  import {isThursday} from 'date-fns';
+declare module '@ukyo/date-fns/is_thursday' {
+  import {isThursday} from '@ukyo/date-fns';
   export = isThursday;
 }
 
-declare module 'date-fns/is_today' {
-  import {isToday} from 'date-fns';
+declare module '@ukyo/date-fns/is_today' {
+  import {isToday} from '@ukyo/date-fns';
   export = isToday;
 }
 
-declare module 'date-fns/is_tomorrow' {
-  import {isTomorrow} from 'date-fns';
+declare module '@ukyo/date-fns/is_tomorrow' {
+  import {isTomorrow} from '@ukyo/date-fns';
   export = isTomorrow;
 }
 
-declare module 'date-fns/is_tuesday' {
-  import {isTuesday} from 'date-fns';
+declare module '@ukyo/date-fns/is_tuesday' {
+  import {isTuesday} from '@ukyo/date-fns';
   export = isTuesday;
 }
 
-declare module 'date-fns/is_valid' {
-  import {isValid} from 'date-fns';
+declare module '@ukyo/date-fns/is_valid' {
+  import {isValid} from '@ukyo/date-fns';
   export = isValid;
 }
 
-declare module 'date-fns/is_wednesday' {
-  import {isWednesday} from 'date-fns';
+declare module '@ukyo/date-fns/is_wednesday' {
+  import {isWednesday} from '@ukyo/date-fns';
   export = isWednesday;
 }
 
-declare module 'date-fns/is_weekend' {
-  import {isWeekend} from 'date-fns';
+declare module '@ukyo/date-fns/is_weekend' {
+  import {isWeekend} from '@ukyo/date-fns';
   export = isWeekend;
 }
 
-declare module 'date-fns/is_within_range' {
-  import {isWithinRange} from 'date-fns';
+declare module '@ukyo/date-fns/is_within_range' {
+  import {isWithinRange} from '@ukyo/date-fns';
   export = isWithinRange;
 }
 
-declare module 'date-fns/is_yesterday' {
-  import {isYesterday} from 'date-fns';
+declare module '@ukyo/date-fns/is_yesterday' {
+  import {isYesterday} from '@ukyo/date-fns';
   export = isYesterday;
 }
 
-declare module 'date-fns/last_day_of_iso_week' {
-  import {lastDayOfISOWeek} from 'date-fns';
+declare module '@ukyo/date-fns/last_day_of_iso_week' {
+  import {lastDayOfISOWeek} from '@ukyo/date-fns';
   export = lastDayOfISOWeek;
 }
 
-declare module 'date-fns/last_day_of_iso_year' {
-  import {lastDayOfISOYear} from 'date-fns';
+declare module '@ukyo/date-fns/last_day_of_iso_year' {
+  import {lastDayOfISOYear} from '@ukyo/date-fns';
   export = lastDayOfISOYear;
 }
 
-declare module 'date-fns/last_day_of_month' {
-  import {lastDayOfMonth} from 'date-fns';
+declare module '@ukyo/date-fns/last_day_of_month' {
+  import {lastDayOfMonth} from '@ukyo/date-fns';
   export = lastDayOfMonth;
 }
 
-declare module 'date-fns/last_day_of_quarter' {
-  import {lastDayOfQuarter} from 'date-fns';
+declare module '@ukyo/date-fns/last_day_of_quarter' {
+  import {lastDayOfQuarter} from '@ukyo/date-fns';
   export = lastDayOfQuarter;
 }
 
-declare module 'date-fns/last_day_of_week' {
-  import {lastDayOfWeek} from 'date-fns';
+declare module '@ukyo/date-fns/last_day_of_week' {
+  import {lastDayOfWeek} from '@ukyo/date-fns';
   export = lastDayOfWeek;
 }
 
-declare module 'date-fns/last_day_of_year' {
-  import {lastDayOfYear} from 'date-fns';
+declare module '@ukyo/date-fns/last_day_of_year' {
+  import {lastDayOfYear} from '@ukyo/date-fns';
   export = lastDayOfYear;
 }
 
-declare module 'date-fns/max' {
-  import {max} from 'date-fns';
+declare module '@ukyo/date-fns/max' {
+  import {max} from '@ukyo/date-fns';
   export = max;
 }
 
-declare module 'date-fns/min' {
-  import {min} from 'date-fns';
+declare module '@ukyo/date-fns/min' {
+  import {min} from '@ukyo/date-fns';
   export = min;
 }
 
-declare module 'date-fns/parse' {
-  import {parse} from 'date-fns';
+declare module '@ukyo/date-fns/parse' {
+  import {parse} from '@ukyo/date-fns';
   export = parse;
 }
 
-declare module 'date-fns/set_date' {
-  import {setDate} from 'date-fns';
+declare module '@ukyo/date-fns/set_date' {
+  import {setDate} from '@ukyo/date-fns';
   export = setDate;
 }
 
-declare module 'date-fns/set_day' {
-  import {setDay} from 'date-fns';
+declare module '@ukyo/date-fns/set_day' {
+  import {setDay} from '@ukyo/date-fns';
   export = setDay;
 }
 
-declare module 'date-fns/set_day_of_year' {
-  import {setDayOfYear} from 'date-fns';
+declare module '@ukyo/date-fns/set_day_of_year' {
+  import {setDayOfYear} from '@ukyo/date-fns';
   export = setDayOfYear;
 }
 
-declare module 'date-fns/set_hours' {
-  import {setHours} from 'date-fns';
+declare module '@ukyo/date-fns/set_hours' {
+  import {setHours} from '@ukyo/date-fns';
   export = setHours;
 }
 
-declare module 'date-fns/set_iso_week' {
-  import {setISOWeek} from 'date-fns';
+declare module '@ukyo/date-fns/set_iso_week' {
+  import {setISOWeek} from '@ukyo/date-fns';
   export = setISOWeek;
 }
 
-declare module 'date-fns/set_iso_year' {
-  import {setISOYear} from 'date-fns';
+declare module '@ukyo/date-fns/set_iso_year' {
+  import {setISOYear} from '@ukyo/date-fns';
   export = setISOYear;
 }
 
-declare module 'date-fns/set_milliseconds' {
-  import {setMilliseconds} from 'date-fns';
+declare module '@ukyo/date-fns/set_milliseconds' {
+  import {setMilliseconds} from '@ukyo/date-fns';
   export = setMilliseconds;
 }
 
-declare module 'date-fns/set_minutes' {
-  import {setMinutes} from 'date-fns';
+declare module '@ukyo/date-fns/set_minutes' {
+  import {setMinutes} from '@ukyo/date-fns';
   export = setMinutes;
 }
 
-declare module 'date-fns/set_month' {
-  import {setMonth} from 'date-fns';
+declare module '@ukyo/date-fns/set_month' {
+  import {setMonth} from '@ukyo/date-fns';
   export = setMonth;
 }
 
-declare module 'date-fns/set_quarter' {
-  import {setQuarter} from 'date-fns';
+declare module '@ukyo/date-fns/set_quarter' {
+  import {setQuarter} from '@ukyo/date-fns';
   export = setQuarter;
 }
 
-declare module 'date-fns/set_seconds' {
-  import {setSeconds} from 'date-fns';
+declare module '@ukyo/date-fns/set_seconds' {
+  import {setSeconds} from '@ukyo/date-fns';
   export = setSeconds;
 }
 
-declare module 'date-fns/set_year' {
-  import {setYear} from 'date-fns';
+declare module '@ukyo/date-fns/set_year' {
+  import {setYear} from '@ukyo/date-fns';
   export = setYear;
 }
 
-declare module 'date-fns/start_of_day' {
-  import {startOfDay} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_day' {
+  import {startOfDay} from '@ukyo/date-fns';
   export = startOfDay;
 }
 
-declare module 'date-fns/start_of_hour' {
-  import {startOfHour} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_hour' {
+  import {startOfHour} from '@ukyo/date-fns';
   export = startOfHour;
 }
 
-declare module 'date-fns/start_of_iso_week' {
-  import {startOfISOWeek} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_iso_week' {
+  import {startOfISOWeek} from '@ukyo/date-fns';
   export = startOfISOWeek;
 }
 
-declare module 'date-fns/start_of_iso_year' {
-  import {startOfISOYear} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_iso_year' {
+  import {startOfISOYear} from '@ukyo/date-fns';
   export = startOfISOYear;
 }
 
-declare module 'date-fns/start_of_minute' {
-  import {startOfMinute} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_minute' {
+  import {startOfMinute} from '@ukyo/date-fns';
   export = startOfMinute;
 }
 
-declare module 'date-fns/start_of_month' {
-  import {startOfMonth} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_month' {
+  import {startOfMonth} from '@ukyo/date-fns';
   export = startOfMonth;
 }
 
-declare module 'date-fns/start_of_quarter' {
-  import {startOfQuarter} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_quarter' {
+  import {startOfQuarter} from '@ukyo/date-fns';
   export = startOfQuarter;
 }
 
-declare module 'date-fns/start_of_second' {
-  import {startOfSecond} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_second' {
+  import {startOfSecond} from '@ukyo/date-fns';
   export = startOfSecond;
 }
 
-declare module 'date-fns/start_of_today' {
-  import {startOfToday} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_today' {
+  import {startOfToday} from '@ukyo/date-fns';
   export = startOfToday;
 }
 
-declare module 'date-fns/start_of_tomorrow' {
-  import {startOfTomorrow} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_tomorrow' {
+  import {startOfTomorrow} from '@ukyo/date-fns';
   export = startOfTomorrow;
 }
 
-declare module 'date-fns/start_of_week' {
-  import {startOfWeek} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_week' {
+  import {startOfWeek} from '@ukyo/date-fns';
   export = startOfWeek;
 }
 
-declare module 'date-fns/start_of_year' {
-  import {startOfYear} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_year' {
+  import {startOfYear} from '@ukyo/date-fns';
   export = startOfYear;
 }
 
-declare module 'date-fns/start_of_yesterday' {
-  import {startOfYesterday} from 'date-fns';
+declare module '@ukyo/date-fns/start_of_yesterday' {
+  import {startOfYesterday} from '@ukyo/date-fns';
   export = startOfYesterday;
 }
 
-declare module 'date-fns/sub_days' {
-  import {subDays} from 'date-fns';
+declare module '@ukyo/date-fns/sub_days' {
+  import {subDays} from '@ukyo/date-fns';
   export = subDays;
 }
 
-declare module 'date-fns/sub_hours' {
-  import {subHours} from 'date-fns';
+declare module '@ukyo/date-fns/sub_hours' {
+  import {subHours} from '@ukyo/date-fns';
   export = subHours;
 }
 
-declare module 'date-fns/sub_iso_years' {
-  import {subISOYears} from 'date-fns';
+declare module '@ukyo/date-fns/sub_iso_years' {
+  import {subISOYears} from '@ukyo/date-fns';
   export = subISOYears;
 }
 
-declare module 'date-fns/sub_milliseconds' {
-  import {subMilliseconds} from 'date-fns';
+declare module '@ukyo/date-fns/sub_milliseconds' {
+  import {subMilliseconds} from '@ukyo/date-fns';
   export = subMilliseconds;
 }
 
-declare module 'date-fns/sub_minutes' {
-  import {subMinutes} from 'date-fns';
+declare module '@ukyo/date-fns/sub_minutes' {
+  import {subMinutes} from '@ukyo/date-fns';
   export = subMinutes;
 }
 
-declare module 'date-fns/sub_months' {
-  import {subMonths} from 'date-fns';
+declare module '@ukyo/date-fns/sub_months' {
+  import {subMonths} from '@ukyo/date-fns';
   export = subMonths;
 }
 
-declare module 'date-fns/sub_quarters' {
-  import {subQuarters} from 'date-fns';
+declare module '@ukyo/date-fns/sub_quarters' {
+  import {subQuarters} from '@ukyo/date-fns';
   export = subQuarters;
 }
 
-declare module 'date-fns/sub_seconds' {
-  import {subSeconds} from 'date-fns';
+declare module '@ukyo/date-fns/sub_seconds' {
+  import {subSeconds} from '@ukyo/date-fns';
   export = subSeconds;
 }
 
-declare module 'date-fns/sub_weeks' {
-  import {subWeeks} from 'date-fns';
+declare module '@ukyo/date-fns/sub_weeks' {
+  import {subWeeks} from '@ukyo/date-fns';
   export = subWeeks;
 }
 
-declare module 'date-fns/sub_years' {
-  import {subYears} from 'date-fns';
+declare module '@ukyo/date-fns/sub_years' {
+  import {subYears} from '@ukyo/date-fns';
   export = subYears;
 }
 
-declare module 'date-fns/locale' {
-  import {locale} from "date-fns";
+declare module '@ukyo/date-fns/locale' {
+  import {locale} from '@ukyo/date-fns';
   export = locale;
 }
 
-declare module 'date-fns/locale/ca' {
-  import {ca} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/ca' {
+  import {ca} from '@ukyo/date-fns/locale';
   export = ca;
 }
 
-declare module 'date-fns/locale/da' {
-  import {da} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/da' {
+  import {da} from '@ukyo/date-fns/locale';
   export = da;
 }
 
-declare module 'date-fns/locale/de' {
-  import {de} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/de' {
+  import {de} from '@ukyo/date-fns/locale';
   export = de;
 }
 
-declare module 'date-fns/locale/el' {
-  import {el} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/el' {
+  import {el} from '@ukyo/date-fns/locale';
   export = el;
 }
 
-declare module 'date-fns/locale/en' {
-  import {en} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/en' {
+  import {en} from '@ukyo/date-fns/locale';
   export = en;
 }
 
-declare module 'date-fns/locale/eo' {
-  import {eo} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/eo' {
+  import {eo} from '@ukyo/date-fns/locale';
   export = eo;
 }
 
-declare module 'date-fns/locale/es' {
-  import {es} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/es' {
+  import {es} from '@ukyo/date-fns/locale';
   export = es;
 }
 
-declare module 'date-fns/locale/fil' {
-  import {fil} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/fil' {
+  import {fil} from '@ukyo/date-fns/locale';
   export = fil;
 }
 
-declare module 'date-fns/locale/fr' {
-  import {fr} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/fr' {
+  import {fr} from '@ukyo/date-fns/locale';
   export = fr;
 }
 
-declare module 'date-fns/locale/id' {
-  import {id} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/id' {
+  import {id} from '@ukyo/date-fns/locale';
   export = id;
 }
 
-declare module 'date-fns/locale/it' {
-  import {it} from 'date-fns/locale/it';
-  export = Formatters;
+declare module '@ukyo/date-fns/locale/it' {
+  import {it} from '@ukyo/date-fns/locale';
+  export = it;
 }
 
-declare module 'date-fns/locale/ja' {
-  import {ja} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/ja' {
+  import {ja} from '@ukyo/date-fns/locale';
   export = ja;
 }
 
-declare module 'date-fns/locale/ko' {
-  import {ko} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/ko' {
+  import {ko} from '@ukyo/date-fns/locale';
   export = ko;
 }
 
-declare module 'date-fns/locale/nb' {
-  import {nb} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/nb' {
+  import {nb} from '@ukyo/date-fns/locale';
   export = nb;
 }
 
-declare module 'date-fns/locale/nl' {
-  import {nl} from 'date-fns/locale/nl';
-  export = Formatters;
+declare module '@ukyo/date-fns/locale/nl' {
+  import {nl} from '@ukyo/date-fns/locale';
+  export = nl;
 }
 
-declare module 'date-fns/locale/pl' {
-  import {pl} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/pl' {
+  import {pl} from '@ukyo/date-fns/locale';
   export = pl;
 }
 
-declare module 'date-fns/locale/pt' {
-  import {pt} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/pt' {
+  import {pt} from '@ukyo/date-fns/locale';
   export = pt;
 }
 
-declare module 'date-fns/locale/ru' {
-  import {ru} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/ru' {
+  import {ru} from '@ukyo/date-fns/locale';
   export = ru;
 }
 
-declare module 'date-fns/locale/sk' {
-  import {sk} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/sk' {
+  import {sk} from '@ukyo/date-fns/locale';
   export = sk;
 }
 
-declare module 'date-fns/locale/sv' {
-  import {sv} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/sv' {
+  import {sv} from '@ukyo/date-fns/locale';
   export = sv;
 }
 
-declare module 'date-fns/locale/tr' {
-  import {tr} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/tr' {
+  import {tr} from '@ukyo/date-fns/locale';
   export = tr;
 }
 
-declare module 'date-fns/locale/zh_cn' {
-  import {zh_cn} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/zh_cn' {
+  import {zh_cn} from '@ukyo/date-fns/locale';
   export = zh_cn;
 }
 
-declare module 'date-fns/locale/zh_tw' {
-  import {zh_tw} from 'date-fns/locale';
+declare module '@ukyo/date-fns/locale/zh_tw' {
+  import {zh_tw} from '@ukyo/date-fns/locale';
   export = zh_tw;
+}
+
+declare module '@ukyo/date-fns' {
+  export * from '@ukyo/date-fns';
 }
