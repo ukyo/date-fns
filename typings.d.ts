@@ -1,4 +1,5 @@
 type DateOrStringOrNumber = Date | string | number;
+type Formatters = {[key: string]: (date: Date) => string};
 
 declare module 'date-fns' {
 
@@ -1188,3 +1189,148 @@ declare module 'date-fns/sub_years' {
   export = subYears;
 }
 
+interface locale {
+  ca: Formatters
+  da: Formatters
+  de: Formatters
+  el: Formatters
+  en: Formatters
+  eo: Formatters
+  es: Formatters
+  fil: Formatters
+  fr: Formatters
+  id: Formatters
+  it: Formatters
+  ja: Formatters
+  ko: Formatters
+  nb: Formatters
+  nl: Formatters
+  pl: Formatters
+  pt: Formatters
+  ru: Formatters
+  sk: Formatters
+  sv: Formatters
+  tr: Formatters
+  zh_cn: Formatters
+  zh_tw: Formatters
+}
+
+declare module 'date-fns/locale' {
+  import {locale} from 'date-fns';
+  export = locale;
+}
+
+declare module 'date-fns/locale/ca' {
+  import {ca} from 'date-fns/locale/ca';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/da' {
+  import {da} from 'date-fns/locale/da';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/de' {
+  import {de} from 'date-fns/locale/de';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/el' {
+  import {el} from 'date-fns/locale/el';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/en' {
+  import {en} from 'date-fns/locale/en';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/eo' {
+  import {eo} from 'date-fns/locale/eo';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/es' {
+  import {es} from 'date-fns/locale/es';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/fil' {
+  import {fil} from 'date-fns/locale/fil';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/fr' {
+  import {fr} from 'date-fns/locale/fr';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/id' {
+  import {id} from 'date-fns/locale/id';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/it' {
+  import {it} from 'date-fns/locale/it';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/ja' {
+  import {ja} from 'date-fns/locale/ja';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/ko' {
+  import {ko} from 'date-fns/locale/ko';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/nb' {
+  import {nb} from 'date-fns/locale/nb';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/nl' {
+  import {nl} from 'date-fns/locale/nl';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/pl' {
+  import {pl} from 'date-fns/locale/pl';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/pt' {
+  import {pt} from 'date-fns/locale/pt';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/ru' {
+  import {ru} from 'date-fns/locale/ru';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/sk' {
+  import {sk} from 'date-fns/locale/sk';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/sv' {
+  import {sv} from 'date-fns/locale/sv';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/tr' {
+  import {tr} from 'date-fns/locale/tr';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/zh_cn' {
+  import {zh_cn} from 'date-fns/locale/zh_cn';
+  export = Formatters;
+}
+
+declare module 'date-fns/locale/zh_tw' {
+  import {zh_tw} from 'date-fns/locale/zh_tw';
+  export = Formatters;
+}
