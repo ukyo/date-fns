@@ -1,5 +1,5 @@
 {
-  "name": "date-fns",
+  "name": "@ukyo/date-fns",
   "version": "1.21.1",
   "author": "Sasha Koss <koss@nocorp.me>",
   "license": "MIT",
